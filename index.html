@@ -4,37 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOP Calculator - ZG</title>
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Document</title>
     <style>
-    input[type=number]::-webkit-inner-spin-button, 
-    input[type=number]::-webkit-outer-spin-button { 
+      input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     margin: 0; 
 }
-        </style>
+
+.inputsize{width: 50%;
+    margin: auto;}
+    </style>
 </head>
 <body>
-  <h1>Zero Gravity LOP Calculator</h1>
+
+<div class="container">
+  <div class="row">
+      
+        
+       <h1 class="text-center">Js Excersise One</h1>
   
-<h2>Enter Your Salary?</h2>
-<input type="number" name="" id="yourSalary">
+        <h2 class="text-center">Enter Your Salary?</h2>
+        <input type="number" class="inputsize" name="" id="yourSalary" required>
 
-<h2>Enter Number Of Working Days</h2>
-<input type="number" name="" id="numberOfDays">
+        <h2 class="text-center">Enter Num of Working Days</h2>
+        <input type="number" class="inputsize" name="" id="numberOfDays" required>
 
-<h2>Enter Leave Days</h2>
-<input type="number" name="" id="leaveDays">
+        <h2 class="text-center">Enter Leave Days</h2>
+        <input type="number" class="inputsize" name="" id="leaveDays" required>
 
-<h2>Enter LOP Hours</h2>
-<input type="number" name="" id="lopHours">
-<br><br>
-<input type="button" value="Check Salary" id="checkSalary">
-<br><br>
-<input type="text" name="" id="output">
+        <h2 class="text-center">Enter LOP Hours</h2>
+        <input type="number" class="inputsize" name="" id="lopHours" required>
+       <p class="text-center">
+        <input type="button" class="inputsize btn btn-primary my-5" value="Check Salary" id="checkSalary">
+      </p>
+        <input type="text" class="inputsize my-5" name="" id="output" disabled>
+      
+      
+  </div>
 
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 </body>
 </html>
