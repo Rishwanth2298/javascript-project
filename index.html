@@ -4,16 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
-    <title>Document</title>
+    <title>LOP Calculator - ZG</title>
+    
+    <style>
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+        </style>
 </head>
 <body>
-  <h1>Js Excersise One</h1>
+  <h1>Zero Gravity LOP Calculator</h1>
   
-<p>Enter your Date of Birth</p>
-  <input type="date" name="newDate" id="myDate"> <br><br>
-  <p>Enter your lucky Number</p>
-  <input type="number" id="myLuckyNum" min="1" max="9"><br><br>
-<input type="button" value="click button" id="clickButton">
+<h2>Enter Your Salary?</h2>
+<input type="number" name="" id="yourSalary">
+
+<h2>Enter Number Of Working Days</h2>
+<input type="number" name="" id="numberOfDays">
+
+<h2>Enter Leave Days</h2>
+<input type="number" name="" id="leaveDays">
+
+<h2>Enter LOP Hours</h2>
+<input type="number" name="" id="lopHours">
+<br><br>
+<input type="button" value="Check Salary" id="checkSalary">
+<br><br>
+<input type="text" name="" id="output">
+
+<script src="script.js"></script>
 </body>
 </html>
